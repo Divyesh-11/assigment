@@ -1,0 +1,515 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fswiss\fcharset0 Calibri;}{\f3\froman\fcharset0 Times New Roman;}{\f4\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs44\lang9 ASSIGNMENT MODULE :- 3\b0\par
+
+\pard\sa200\sl276\slmult1\b 1. Introduction to C++\b0\par
+\b\fs28 Q-1.  What are the key differences between Procedural Programming and Object-Oriented Programming (OOP)?\par
+\fs32 Ans. \par
+1.\fs28 Procedural Programming \b0 : Procedural programming is a programming paradigm that involves breaking down a program into a series of instructions, or procedures, that are executed in order.\par
+\b\fs36 2.\fs28 Object-Oriented Programming (OOP) \b0 : Object-oriented programming (OOP) is a computer programming style that organizes software around objects, rather than logic and functions. In OOP, objects are units that contain both data and code, and programs are designed by making them out of objects that interact with each other.\par
+\par
+\b Q - 2.  List and explain the main advantages of OOP over POP.\b0\par
+\b Ans. \par
+---> Security\b0 : OOP is more secure than POP because it supports access control and data hiding. \b\par
+---> Code maintenance: \b0 OOP makes it easier to maintain and update code. OOP's modularity and encapsulation features allow coders to make changes without affecting the entire codebase. \par
+\b ---> Code reusability: \b0 OOP allows developers to reuse code blocks through inheritance. \par
+\b ---> Polymorphism: \b0 OOP's polymorphism concept allows objects from different classes to be treated as instances of a common superclass. This enables different objects to respond differently to the same method invocation. \par
+\b ---> Inheritance: \b0 OOP supports inheritance, which allows developers to use attributes and functions of other classes. \b\par
+---> Debugging: \b0 OOP makes debugging simpler. \b\par
+---> Productivity: \b0 OOP practices can increase productivity. \b\par
+---> Data management: \b0 OOP can streamline data management to reduce redundancy. \par
+\b ---> Code flexibility: \b0 OOP allows for adaptable solutions. \b\par
+---> Problem-solving: \b0 OOP can help with problem-solving. \par
+\b Q - 3. Explain the steps involved in setting up a C++ development environment. \par
+Ans.\par
+1.Install a Compiler: \b0 A compiler translates C++ code into machine code. Popular C++ compilers include.\par
+(i). GCC ->  Available for Linux, macOS, and Windows via MinGW.\par
+(ii).MSVC (Microsoft Visual SC++): Comes with Visual Studio for Windows.\par
+ex.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b macOS: \b0 Install Xcode or GCC via Homebrew (brew install gcc).\par
+{\pntext\f4\'B7\tab}\b Linux: \b0 Use your package manager (sudo apt install g++ for Ubuntu).\par
+{\pntext\f4\'B7\tab}\b Windows: \b0 Install MinGW or Visual Studio.\par
+
+\pard\sa200\sl276\slmult1\b 2. Install an IDE or Text Editor :\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Visual Studio Code:\b0  Lightweight and extensible.\par
+{\pntext\f4\'B7\tab}\b Dev-C++: \b0 Simple IDE for small projects.\par
+
+\pard\sa200\sl276\slmult1\b 3.Configure the Environment Variables (Optional) : \par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Add the compiler (e.g., GCC) or build tool paths to the PATH environment variable.\par
+{\pntext\f4\'B7\tab}\b Windows: \b0 Use "System Properties > Environment Variables."\par
+
+\pard\sa200\sl276\slmult1\b\fs32 4. Verify the Setup\b0\par
+Test the setup by compiling a simple "Hello, World!" program:\par
+#include<iostream>\par
+using namespace std;\par
+int main()\par
+\{\par
+cout<<"\\nHellow world!";\par
+return 0;\par
+\}\par
+\b\fs28 Q - 4. What are the main input/output operations in C++? Provide examples.\fs32\par
+Ans.\par
+----> Main input/output in c++.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 std : : cin : \b0 for used to take a value by user.\b\par
+{\pntext\f4\'B7\tab}std : : cout : \b0 for used to print the value or string.\par
+
+\pard\sa200\sl276\slmult1\b 1. input using (std : : cin)\par
+std : : cin is used to take input from the user.\par
+ex.\par
+\b0 #include<iostream>\par
+using namespace std;\par
+int main()\{\par
+int age;\par
+cout<<"\\nEnter the age = ";\par
+cin>>age;\par
+\par
+cout<<"\\nUser enter the age is = ";\par
+\par
+return 0;\par
+\}\par
+\b 2.Output using (std : : cout)\par
+std::cout is used to display output to the console.\par
+ex.\par
+\b0 #include<iostream>\par
+using namespace std;\par
+int main()\{\par
+cout<<"\\nThis is my program in c++";\par
+return 0;\par
+\}\par
+\par
+\b\fs44 2. Variables, Data Types, and Operators\par
+\fs28 Q - 1. What are the different data types available in C++? Explain with examples.\par
+Ans.\par
+----> Two type in c++.\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 primetive data types\b0\par
+{\pntext\f0 2.\tab}\b non-primetive data type\b0\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\tab drived data types\par
+{\pntext\f4\'B7\tab}\tab user-defind data types\par
+
+\pard\sa200\sl276\slmult1\b\fs32 1. primetive data types\par
+\b0\fs28  --- > these are basic data types built into thr language.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 integer(int ) : \par
+
+\pard\sa200\sl276\slmult1\tab\tab --- > Used to store whole numbers.\par
+\tab\tab              ex. int age = 25;\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 floating point (float, double )\par
+
+\pard\sa200\sl276\slmult1\tab\tab --- > Used to store decimal numbers.\par
+\tab\tab              ex. float marks = 98.88;\par
+\tab\tab              ex.double largeValue = 12345.6789; \par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 character (char )\par
+
+\pard\sa200\sl276\slmult1\tab\tab --- > Used to store a single character.\par
+\tab\tab\tab    ex. char grade = 'A';\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 boolan (bool )\par
+
+\pard\sa200\sl276\slmult1\tab\tab --- > Used to store true or false.\par
+\tab\tab\tab     ex. bool isvaild = true;\par
+\tab\tab\tab     ex. bool is vaild = false;\par
+\b\fs32\lang1033 2. \lang9 non-primetive data type\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Derived datatype : \b0 three type of derived datatypes\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\fs32 Array\fs28\par
+{\pntext\f0 2.\tab}\fs32 Function\fs28\par
+{\pntext\f0 3.\tab}\fs32 Pointer\fs28\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\fs32 Uerdefind datatype : \b0 two types in Userdefind datatypes.\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\fs32 Structhar\fs28\par
+{\pntext\f0 2.\tab}\fs32 Union\b  \fs28\par
+
+\pard\sa200\sl276\slmult1\b0\par
+\b Q - 2. Explain the difference between implicit and explicit type conversion in C++.\par
+Ans.\par
+\fs32 1.implicit type conversion : \fs28\par
+\b0 ---->  Also known as type coercion, this is when the compiler automatically changes the data type of a value. This happens when the program or language calls for a different type than the one given by the programmer.\par
+\b\fs32 2.Explicit type conversion : \b0\par
+----> Also known as type casting, this is when the programmer intentionally changes the data type of a value. The programmer uses built-in functions or operators to do this. \par
+\b\fs28 Q - 3. What are the different types of operators in C++? Provide examples of each.\par
+Ans. \par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Arithmetic operators\par
+{\pntext\f0 2.\tab}Relational operators\par
+{\pntext\f0 3.\tab}Logical operators\par
+{\pntext\f0 4.\tab}Assignment operators\par
+{\pntext\f0 5.\tab}Bitwise operators\par
+{\pntext\f0 6.\tab}increment or decrement operators\par
+{\pntext\f0 7.\tab}ternry operators\par
+
+\pard\sa200\sl276\slmult1 1. Arithmetic operator : \b0 used to basic mathemetic opretions addition, subtraction, maltiplication, division.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b + : addition \par
+{\pntext\f4\'B7\tab}- : subtraction \par
+{\pntext\f4\'B7\tab}* : maltiplication \par
+{\pntext\f4\'B7\tab}/ : division \par
+
+\pard\sa200\sl276\slmult1 2. Relational operators : \b0 used to compering number or veriable, and returning true and false.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b == : Both number are equal.\par
+{\pntext\f4\'B7\tab}< : one number are less a secound number.\par
+{\pntext\f4\'B7\tab}> : onr number are greter a secound number.\par
+{\pntext\f4\'B7\tab}!= : onr number are not equal a secound number.\par
+{\pntext\f4\'B7\tab}>= : one number are greter than equal a secound number.\par
+{\pntext\f4\'B7\tab}<= : one number are less than equal a secound number. \par
+
+\pard\sa200\sl276\slmult1 3. Logical operators : \b0 used to combining two or more than conditions if they are true or falase.\b\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 && : logocal And\b0\par
+{\pntext\f4\'B7\tab}\b || : logical Or \b0\par
+
+\pard\sa200\sl276\slmult1\b 4. Assignment operators : \b0 used to assingning value to veriable.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b = : assign value\b0\par
+{\pntext\f4\'B7\tab}\b += : addition and assign value \b0\par
+{\pntext\f4\'B7\tab}\b -= : subtract and assign value\b0\par
+{\pntext\f4\'B7\tab}\b *= : maltiplication and assign value\b0\par
+{\pntext\f4\'B7\tab}\b /= : division and assign value\b0\par
+
+\pard\sa200\sl276\slmult1\b 5. Bitwise operators : using to conditions compering shorts.\par
+6. Increment or decrement operators : increment operator used to value increase and decrement operator used to value decrease.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 a++ : post value increase.\par
+{\pntext\f4\'B7\tab}++a : pre value increase.\par
+{\pntext\f4\'B7\tab}a-- : post value decrease.\par
+{\pntext\f4\'B7\tab}--a : pre value decrease.\par
+
+\pard\sa200\sl276\slmult1 7. ternary opreator : \b0 Used to evaluate a condition and return a value.\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 ?: : condition ? a : b; \b\par
+
+\pard\sa200\sl276\slmult1\par
+Q - 4. Explain the purpose and use of constants and literals in C++. \par
+Ans. \b0 Constants and literals in C++ represent values that do not change during program execution. They improve code readability, maintainability, and help prevent accidental modification of values.\par
+\b 1.Constants : \b0 used to declared veriable to not changed the value.\par
+\tab\tab   ex. const int a = 10;\par
+\b 2. literals : \b0 used to declared veriable fixed values in the code \par
+\b\tab         \tab   \b0 ex. int a = 10;\par
+\par
+\b\fs44 3. Control Flow Statements\par
+\fs28 Q - 1. What are conditional statements in C++? Explain the if-else and switch statements.\par
+Ans. \b0 Condition statements in c++ control the flow of a program based on specific conditions. These conditions are usully boolean true or false. if the condition true a specific bloack of code are excueted, otherwise, another block is excuete.\par
+----> The main conditional statement in c++\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b\fs32 if - else statement \par
+
+\pard\sa200\sl276\slmult1      2. switch statement \b0\fs28\par
+1. \b\fs32 if - else statement \b0\fs28\par
+\tab i. simple if - else statement \par
+\tab\tab ex. if (condition)\{\par
+\tab\tab        code \} else \{\par
+\tab\tab         code \}\par
+\tab ii. ladder if - else statement\par
+\tab\tab ex. if (condition)\{\par
+\tab\tab        code \} else if (condition )\{\par
+\tab\tab         code \} \par
+\tab iii. nested if - else statement\par
+\tab\tab ex.if(condition)\{\par
+\tab\tab if(condition )\{\par
+\tab\tab code \}\par
+\tab\tab\} \par
+\b\fs32 2. switch statement \par
+\tab\b0 ex. switch(expression)\par
+\tab        \{ case 1 :\par
+\tab\tab // code\par
+\fs28\tab\tab break;\par
+\fs32\tab\tab case 2 :\par
+\tab\tab // code\par
+\fs28\tab\tab break;\par
+\tab\tab defualt : // code \par
+\tab          \}\par
+\par
+\b Q - 2. What is the difference between for, while, and do-while loops in C++?\par
+Ans. \b0 Loops are used to in c++ to repeatedly execte a block of code as long as a specific condition is true.\par
+----> The main types of loop in c++ are for, while , do while.\par
+\b 1. for loop : \b0 Used  the number of iterations is known before hand or you want to control the loop.\par
+ex. for(initialization,condition, increment/decrement)\par
+\tab\{  //code \} \par
+\b 2.while loop : \b0 Used the number of iterations is not known in advance and depends on a condition.\par
+ex.while(condition)\par
+\{ // code \} \b\par
+3.do while loop : \b0 Used the loop must execute at least one regardless of the condition.\par
+ex. do \{\par
+// code \} while(condition)\par
+\par
+\b Q - 3. How are break and continue statements used in loops? Provide examples.\b0\par
+\b Ans. \par
+1. break statement : \b0 Break statement used to loop and switch statement.\par
+The break statement is used to termineted the loop imedeatlly and exit for loop or execute next codition. and used to switch case statement in cheak to case and execute this code and condition are false to break the the code. \par
+ex.#include<iostream>\par
+using namespace std;\par
+int main()\{\par
+int i,num = 10;\par
+for(i = 1; i <= num; i++)\{\par
+if(i == 5)\{\par
+break;  \}\par
+\}\par
+cout<<"\\nThe number =  "<< i ;\par
+return 0;\par
+\}\par
+\b 2. countinue statement : \b0  Countinue statement used to skip the cuurent inertion of the loop and move to next inertion. used countionue statement is ignored the inertion.\par
+ex.#include<iostream>\par
+using namespace std;\par
+int main()\{\par
+int i,num = 10;\par
+for(i = 1; i <= num; i++)\{\par
+if(i == 5)\{\par
+countinue;  \}\par
+\}\par
+cout<<"\\nThe number =  "<< i ;\par
+return 0;\par
+\}\par
+\b Q - 4. Explain nested control structures with an example.\par
+Ans.\b0 Nested control structures like loops, conditional statements, or switches is placed inside another.\par
+\b 1.Nested if statement \b0 : an if satatement in other if or else block.\par
+#include<iostream>\par
+using namespace std;\par
+int main()\par
+\{\par
+    int num1,num2,num3;\par
+cout<<"\\nEnter the num1 value =  ";\par
+cin>>num1;\par
+cout<<"\\nEnter the num2 value = ";\par
+cin>>num2;\par
+cout<<"\\nEnter the num3 value = ";\par
+cin>>num3;\par
+    if(num1>num2)\par
+    \{\par
+        \par
+        if(num1>num3)\par
+        \{\par
+            cout<<"\\nnum1 is the biggest number =  "<<num1;\par
+        \}\par
+        else\par
+        \{\par
+            cout<<"\\nnum3 is the biggest number = "<<num3;\par
+        \}\par
+    \}    else\par
+\{\par
+        if(num2>num1)\par
+        \{\par
+            if(num2>num3)\par
+            \{\par
+                cout<<"\\nnum2 is the biggest number = "<<num2;\par
+            \}\par
+            else\par
+            \{\par
+                cout<<"\\nnum3 is biggest number = "<<num3;\par
+            \}\par
+        \}\par
+    \}\par
+return 0;\par
+\}\par
+\b 2. Nested loop statement : \b0 an loop inside another loop.\par
+ex.\par
+#include<iostream>\par
+using namespce std;\par
+int main()\par
+\{\par
+\tab int row,colm,i,j;\par
+\tab cout<<"\\nEnter the row = ";\par
+\tab cin>>row;\par
+\tab cout<<"\\nEnter the colm  = ";\par
+\tab cin>>colm;\tab\par
+\tab for(i=1;i<=row;i++)\par
+\tab\{\par
+\tab\tab for(j=1;j<=colm;j++)\par
+\tab\tab\{\par
+\tab\tab\tab cout<<"* ";\par
+\tab\tab\}\par
+\tab\tab cout<<"\\n";\par
+\tab\}\par
+\tab return 0;\par
+\}\par
+\b\fs44 4. Functions and Scope\par
+\fs28 Q - 1. What is a function in C++? Explain the concept of function declaration, definition, and calling. \par
+Ans. \b0 A function in C++ is a block of code that performs a specific task. and function is helpd to organizing code into smaller. \par
+\b ----> Four types in function.\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0 with return type and with argument \par
+{\pntext\f0 2.\tab}With return type and without argument \par
+{\pntext\f0 3.\tab}without return type and with argument \par
+{\pntext\f0 4.\tab}without return type and without argument\b  \b0\par
+
+\pard\sa200\sl276\slmult1\b ----> Three types of key concepts :\b0\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b declration of function :- \b0 First step of Declar of and tell compiler about a function's existence before it is used in the program.\par
+{\pntext\f4\'B7\tab}\b Calling :- \b0 The function called and execute the code and function called always in main function.\b\par
+{\pntext\f4\'B7\tab}definition :- \b0 The function definition provides the actual implementation of the function.\par
+
+\pard\sa200\sl276\slmult1\b Q -2. What is the scope of variables in C++? Differentiate between local and global scope. \par
+Ans.\b0 The scope of a variable in C++ refers to the region or context within a program where the variable is declared and can be accessed. \par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b Local scope :- \b0 variavle declared inside a function or block have local scope. They are acciblity with function or block.\line\line\b\tab  ex. \{ int x = 5; /* Local variable */ \}\b0\par
+{\pntext\f0 2.\tab}\b Global scope :- \b0 variable declared outside any funtion and class have global scope. they are acciblety throughout that fuction or block. \par
+
+\pard\sa200\sl276\slmult1\tab\tab\b ex. int y = 10; /* Global variable */\par
+Q - 3. Explain recursion in C++ with an example.\par
+Ans. \b0 Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem.\par
+Ex. Factorial Calculation\par
+The factorial of a number n, denoted as n!,is defind as :\par
+n!=n\'d7(n\f1\u8722?\f0 1)\'d7(n\f1\u8722?\f0 2)\'d7\'85\'d71\par
+\b Q - 4. What are function prototypes in C++? Why are they used?\par
+Ans. \b0 A function prototype is a declaration of a function that specifies the function's name, return type, and parameters without providing its implementation. It acts as a blueprint or contract, informing the compiler about the function's existence and how it should be called.\par
+\b Syntax of funcation :\par
+\tab return_type function_name(parameter_list);\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\lang9 return type: \b0 Specifies the type of value the function will return.\par
+{\pntext\f4\'B7\tab}\b function name: \b0 The name of the function.\par
+{\pntext\f4\'B7\tab}\b parameter list: \b0 Specifies the types and optionally the names of parameters.\par
+
+\pard\sa200\sl276\slmult1\b Function prototype Uesd :- \par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Early Declaration :\b0  A function prototype allows the compiler to know about a function before its actual implementation is encountered in the code. This is especially useful when functions are defined after the main() function.\par
+{\pntext\f0 2.\tab}\b Type Checking : \b0 The compiler uses the prototype to check that the function is called with the correct number and types of arguments.\par
+{\pntext\f0 3.\tab}\b Separation of Declaration and Definition : \b0 Enables modular programming by separating the function's declaration (in header file)form its definition (in a Source file).\par
+
+\pard\sa200\sl276\slmult1\b\fs44 5. Arrays and Strings\par
+\fs28 Q - 1. What are arrays in C++? Explain the difference between single-dimensional and multi\'02dimensional arrays.\par
+Ans. \b0 The array can be defined as a group or collection of similar kinds of elements or data items that are stored together in contiguous memory spaces. All the memory locations are adjacent to each other, and the number of elements in an array is the size of the array.\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b single-dimensional : \b0 A One-Dimensional Array is a group of elements having the same data type which are stored in a linear arrangement under a single variable name.\par
+{\pntext\f0 2.\tab}\b multi-dimensional arrays : \b0 In a multi-dimensional array, each element in each dimension has the same, fixed size as the other elements in that dimension. In a jagged array, which is an array of arrays, each inner array can be of a different size. By only using the space that's needed for a given array, no space is wasted.\par
+
+\pard\sa200\sl276\slmult1\b Q - 2. Explain string handling in C++ with examples.\par
+Ans. \b0 The string class in C++ provides a more powerful and user-friendly way to handle strings. It offers various features such as dynamic sizing, inbuilt methods for manipulation, and easy concatenation.\par
+\par
+
+\pard\b Q - \cf1\f2 3. How are arrays initialized in C++? Provide examples of both 1D and 2D arrays.\par
+ \par
+Ans.\b0  Arrays in C++ can be initialized in several ways, depending on their type and dimensions. Here's a breakdown of the initialization process for 1D arrays and 2D arrays:\par
+\par
+
+\pard 
+{\pntext\f2 1.\tab}{\*\pn\pnlvlbody\pnf2\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720 One-Dimensional (1D) Arrays : 1D array is a linear collection of elements of the same type.\line\line\b ex. 1D array Declered by int arr1[5] = \{1,2,3,4,5\};\b0\line\par
+{\pntext\f2 2.\tab}Two-Dimensional (2D) Arrays : A 2D array is a matrix-like collection of elements arranged in rows and columns.\par
+
+\pard\tab\par
+\tab\b ex. 2D  array Declered bt int arr1[2][3] = \{ \{1,2,3\} , \{4,5,6\}\};\par
+\par
+Q - 4. Explain string operations and functions in C++. \par
+\par
+Ans. \b0 In C++, a string is a sequence of characters stored in a char array. C++ has a set of string functions and operations.\par
+---> String can be defined using the string keyword or C-style string .\par
+\b\par
+ex.string str = "Text" or char str[] = \{'T', 'e' , 'x' , 't' , '\\0'\};\par
+\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720 String functions\par
+
+\pard\b0 ---> Some common string functions in C++ include:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\b strlen(str1):\b0  Finds the length of a string \par
+{\pntext\f4\'B7\tab}\b strcpy(str1,str2): \b0 Copies the content of one string to another \par
+{\pntext\f4\'B7\tab}\b strcat(str1,str2):\b0  Appends two strings \par
+{\pntext\f4\'B7\tab}\b strcmp(str1,str2): \b0 Compares two strings and returns a negative value if str1 is less than str2, 0 if they are equal, and a positive value if str1 is greater than str2 \par
+
+\pard\b\f3\fs44\par
+6. Introduction to Object-Oriented Programming \par
+\par
+\fs28 Q -\f2  1. Explain the key concepts of Object-Oriented Programming (OOP). \par
+\par
+Ans. \b0 Four key concepts in object-oriented programming language.\par
+\b\par
+
+\pard 
+{\pntext\f2 1.\tab}{\*\pn\pnlvlbody\pnf2\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720 Encapsulation\par
+{\pntext\f2 2.\tab}Abstraction\par
+{\pntext\f2 3.\tab}Inheritance\par
+{\pntext\f2 4.\tab}Polymorphism\par
+
+\pard\par
+1. Encapsulation : \b0 Encapsulates all important information within an object, while only exposing select information. This protects the data from external interference.\par
+\par
+\b 2. Abstraction \b0 : Hides unnecessary implementation code, and only reveals internal mechanisms that are relevant to other objects. This allows developers to avoid repeating the same work multiple times.\par
+\par
+\b 3. Inheritance : \b0 Allows classes to reuse code and properties from other classes.\par
+\par
+\b 4. Polymorphism :\b0  Allows objects to share behaviors, and take on more than one form.\par
+\par
+
+\pard\b Q - 2. What are classes and objects in C++? Provide an example. \par
+\par
+Ans. \b0 In C++, classes and objects are fundamental concepts of object-oriented programming.\par
+\b\par
+
+\pard 
+{\pntext\f2 1.\tab}{\*\pn\pnlvlbody\pnf2\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720 Classes\par
+{\pntext\f2 2.\tab}Object\par
+
+\pard\par
+1. Classes : \b0 A class is a user-defined data type that serves as a blueprint for creating objects.\par
+\par
+\b ex. class student \par
+\{ /* code */\par
+\};\par
+\par
+2. Object : \b0 An object is an instance of a class. It contains the data (attributes) and can use the methods defined in the class.\par
+\par
+\b ex. student s1;\par
+\par
+
+\pard Q - 3. What is inheritance in C++? Explain with an example. \par
+\par
+Ans. \b0 Inheritance in C++ is a feature that allows a class to inherit properties and methods from another class, without modifying the original class.\par
+\par
+----> some key concepts about inheritance in C++ :\par
+
+\pard 
+{\pntext\f2 1.\tab}{\*\pn\pnlvlbody\pnf2\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\b Base class : \b0 The class that is being inherited from.\b\par
+{\pntext\f2 2.\tab}Derived class : \b0 The class that inherites from another class.\b\par
+{\pntext\f2 3.\tab}Symbol for inheritance : \b0 The \b (:) \b0 symbol is used to indicate inheritance.\b\par
+{\pntext\f2 4.\tab}Modes of inheritance : \b0 public, private, or protected can be used to specify how the inheritance is done.\b\par
+
+\pard\b0\par
+
+\pard\b Q - 4. What is encapsulation in C++? How is it achieved in classes? \b0\fs22\par
+
+\pard\b\fs28\par
+Ans. \b0 In C++, encapsulation is the process of combining related data and functions into a single unit called a class.\par
+\par
+---> To achieve encapsulation in C++ :\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\b Declare class variables as private : \b0 This prevents outside access to the data.\par
+{\pntext\f4\'B7\tab}\b Provide public get and set methods :\b0  This allows others to read or modify the value of a private member. \par
+
+\pard\par
+
+\pard\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\par
+}
+ 
